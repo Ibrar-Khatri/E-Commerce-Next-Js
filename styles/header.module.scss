@@ -3,35 +3,87 @@
 	background-color: rgb(15, 52, 96);
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
-	color: rgb(255, 255, 255);
-	// padding-left: 20px;
-	// padding-right: 20px;
-	// @media screen and (max-width: 900px) {
-	// 	.headerLeftContent {
-	// 		display: none;
-	// 	}
-	// }
-}
+	.abc {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		color: rgb(255, 255, 255);
+	}
+	.iconsAndText > span {
+		padding-left: 10px;
+		font-size: 12px;
+		font-weight: 200;
+	}
+	.headerLeftContent {
+		display: flex;
+		justify-content: flex-start;
+		width: 440px;
+		margin-left: 10px;
+	}
+	.headerRightContent {
+		display: flex;
+		justify-content: flex-end;
+		width: 440px;
+		margin-right: 10px;
+	}
 
-.iconsAndText > span {
-	padding-left: 10px;
-	font-size: 12px;
-	font-weight: 200;
-}
-.headerLeftContent {
-	display: flex;
-	justify-content: flex-start;
-	width: 390px;
-}
-.headerRightContent {
-	display: flex;
-	justify-content: flex-end;
-	width: 390px;
-}
+	.iconsAndText {
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+	}
 
-.iconsAndText {
-	display: flex;
-	align-items: center;
-	margin-right: 10px;
+	.logoStyle {
+		display: none;
+	}
+	.dropDownStyle {
+		font-size: 12px;
+		font-weight: 200;
+		display: flex;
+		// flex-direction: column;
+		justify-content: flex-start;
+		// margin-top: 26px;
+		// background-color: rgb(255, 255, 255);
+		// color: rgb(43, 52, 69);
+		// border-radius: 4px;
+		// box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
+		// 	rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+		// position: absolute;
+		// overflow: hidden auto;
+		// min-width: 16px;
+		// min-height: 16px;
+		// max-width: calc(100% - 32px);
+		// max-height: calc(100% - 32px);
+		// outline: 0px;
+	}
+	.listItem {
+		// background-color: white;
+		// color: black;
+		list-style: none;
+		// border: 1px solid gray;
+		margin-top: 26px;
+		background-color: rgb(255, 255, 255);
+		color: rgb(43, 52, 69);
+		border-radius: 4px;
+		box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
+			rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+		position: absolute;
+		overflow: hidden auto;
+		min-width: 16px;
+		min-height: 16px;
+		max-width: calc(100% - 32px);
+		max-height: calc(100% - 32px);
+		outline: 0px;
+	}
+	.listItem > li {
+		background-color: red;
+	}
+	@media screen and (max-width: 900px) {
+		.iconsAndText {
+			display: none;
+		}
+		.logoStyle {
+			display: block;
+		}
+	}
 }
