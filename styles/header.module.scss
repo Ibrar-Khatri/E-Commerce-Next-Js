@@ -1,89 +1,197 @@
+// .mainDiv {
+// 	height: 40px;
+// 	background-color: rgb(15, 52, 96);
+// 	display: flex;
+// 	align-items: center;
+// 	.abc {
+// 		display: flex;
+// 		align-items: center;
+// 		justify-content: space-around;
+// 		color: rgb(255, 255, 255);
+// 	}
+// 	.iconsAndText > span {
+// 		padding-left: 10px;
+// 		font-weight: 200;
+// 	}
+// 	.headerLeftContent {
+// 		display: flex;
+// 		justify-content: flex-start;
+// 		width: 440px;
+// 		margin-left: 10px;
+// 	}
+// 	.headerRightContent {
+// 		display: flex;
+// 		justify-content: flex-end;
+// 		width: 440px;
+// 		margin-right: 10px;
+// 	}
+
+// 	.iconsAndText {
+// 		display: flex;
+// 		align-items: center;
+// 		margin-right: 10px;
+// 	}
+
+// 	.logoStyle {
+// 		display: none;
+// 	}
+// 	.dropDownStyle {
+// 		font-weight: 200;
+// 		width: 16px;
+// 		background-color: blue;
+
+// 		// margin-top: 26px;
+// 		// background-color: rgb(255, 255, 255);
+// 		// color: rgb(43, 52, 69);
+// 		// border-radius: 4px;
+// 		// box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
+// 		// 	rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+// 		// position: absolute;
+// 		// overflow: hidden auto;
+// 		// min-width: 16px;
+// 		// min-height: 16px;
+// 		// max-width: calc(100% - 32px);
+// 		// max-height: calc(100% - 32px);
+// 		// outline: 0px;
+// 	}
+// 	.listItem {
+// 		// background-color: white;
+// 		// color: black;
+// 		// list-style: none;
+// 		// border: 1px solid gray;
+// 		// margin-top: 26px;
+// 		// background-color: rgb(255, 255, 255);
+// 		// color: rgb(43, 52, 69);
+// 		// border-radius: 4px;
+// 		// box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
+// 		// 	rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+// 		// position: absolute;
+// 		// overflow: hidden auto;
+// 		// min-width: 16px;
+// 		// min-height: 16px;
+// 		// max-width: calc(100% - 32px);
+// 		// max-height: calc(100% - 32px);
+// 		// outline: 0px;
+// 	}
+// 	.listItem > li {
+// 		background-color: red;
+// 	}
+// 	@media screen and (max-width: 900px) {
+// 		.iconsAndText {
+// 			display: none;
+// 		}
+// 		.logoStyle {
+// 			display: block;
+// 		}
+// 	}
+// }
+
+// background-color: rgb(255, 255, 255);
+// 		color: rgb(43, 52, 69);
+// 		border-radius: 4px;
+// 		box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
+// 			rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+// 		position: absolute;
+// 		overflow: hidden auto;
+// 		min-width: 16px;
+// 		min-height: 16px;
+// 		max-width: calc(100% - 32px);
+// 		max-height: calc(100% - 32px);
+// 		outline: 0px;
+
 .mainDiv {
-	height: 40px;
 	background-color: rgb(15, 52, 96);
+	height: 40px;
 	display: flex;
-	align-items: center;
-	.abc {
+	justify-content: center;
+	color: white;
+	font-size: 12px;
+	.insideMainDiv {
+		max-width: 1200px;
+		width: 97%;
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
-		justify-content: space-around;
-		color: rgb(255, 255, 255);
-	}
-	.iconsAndText > span {
-		padding-left: 10px;
-		font-size: 12px;
-		font-weight: 200;
-	}
-	.headerLeftContent {
-		display: flex;
-		justify-content: flex-start;
-		width: 440px;
-		margin-left: 10px;
-	}
-	.headerRightContent {
-		display: flex;
-		justify-content: flex-end;
-		width: 440px;
-		margin-right: 10px;
-	}
-
-	.iconsAndText {
-		display: flex;
-		align-items: center;
-		margin-right: 10px;
-	}
-
-	.logoStyle {
-		display: none;
-	}
-	.dropDownStyle {
-		font-size: 12px;
-		font-weight: 200;
-		display: flex;
-		// flex-direction: column;
-		justify-content: flex-start;
-		// margin-top: 26px;
-		// background-color: rgb(255, 255, 255);
-		// color: rgb(43, 52, 69);
-		// border-radius: 4px;
-		// box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
-		// 	rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
-		// position: absolute;
-		// overflow: hidden auto;
-		// min-width: 16px;
-		// min-height: 16px;
-		// max-width: calc(100% - 32px);
-		// max-height: calc(100% - 32px);
-		// outline: 0px;
-	}
-	.listItem {
-		// background-color: white;
-		// color: black;
-		list-style: none;
-		// border: 1px solid gray;
-		margin-top: 26px;
-		background-color: rgb(255, 255, 255);
-		color: rgb(43, 52, 69);
-		border-radius: 4px;
-		box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
-			rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
-		position: absolute;
-		overflow: hidden auto;
-		min-width: 16px;
-		min-height: 16px;
-		max-width: calc(100% - 32px);
-		max-height: calc(100% - 32px);
-		outline: 0px;
-	}
-	.listItem > li {
-		background-color: red;
-	}
-	@media screen and (max-width: 900px) {
+		.headerLeftContent {
+			display: flex;
+			justify-content: flex-start;
+			width: 40%;
+		}
+		.headerRightContent {
+			display: flex;
+			justify-content: flex-end;
+		}
 		.iconsAndText {
-			display: none;
+			display: flex;
+			align-items: center;
+			padding-left: 12px;
+		}
+		.textStyle {
+			margin-right: 20px;
+			width: 170px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-weight: 200;
+		}
+		.textStyle > a:hover {
+			color: rgb(210, 63, 87);
+		}
+		.dropDownStyle {
+			margin-right: 20px;
+			width: 70px;
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
 		}
 		.logoStyle {
-			display: block;
+			display: none;
+		}
+		.iconsAndText > span {
+			padding-left: 5px;
+			font-weight: 200;
+		}
+		// .dropDownItem {
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	align-items: center;
+		// }
+		// .dropDownItem div {
+		// 	background-color: rgb(255, 255, 255);
+		// 	color: rgb(43, 52, 69);
+		// 	border-radius: 4px;
+		// 	// box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
+		// 	// 	rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+		// 	box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
+		// 		rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+		// 	position: absolute;
+		// 	width: 50px;
+		// }
+		// .listItem {
+		// 	margin-top: 27px;
+		// 	display: absolute;
+		// }
+		// .listItem > p {
+		// 	display: flex;
+		// 	justify-content: center;
+		// 	margin: 0 auto;
+		// 	height: 35px;
+		// 	align-items: center;
+		// }
+		// .listItem > p:hover {
+		// 	background-color: rgba(0, 0, 0, 0.04);
+		// }
+
+		@media screen and (max-width: 900px) {
+			.logoStyle {
+				display: block;
+			}
+			.textStyle {
+				display: none;
+			}
+			.iconsAndText {
+				display: none;
+			}
 		}
 	}
 }

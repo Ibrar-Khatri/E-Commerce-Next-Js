@@ -1,0 +1,36 @@
+.navBarMainDiv {
+	background-color: #fff;
+	.navBarStyle {
+		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		.bazarLogo {
+		}
+		.searchBar {
+			height: 44px;
+			background-color: yellowgreen;
+			display: flex;
+			align-items: center;
+			color: #7d879c;
+			max-width: 500px;
+			width: 100%;
+		}
+		.iconDiv {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 115px;
+			.iconStyle {
+				height: 44px;
+				width: 44px;
+				background: #f3f5f9;
+				border-radius: 100%;
+				// padding: 5px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
