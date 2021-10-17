@@ -1,0 +1,23 @@
+.headerCarouselMainDiv {
+	display: flex;
+	justify-content: center;
+	.headerCarousel {
+		height: 520px;
+		display: flex;
+		justify-content: space-around;
+		max-width: 1040px;
+		height: fit-content;
+		.mainHeading > h1 {
+			max-width: 472px;
+			font-size: 50px;
+		}
+		.headerCarouselText {
+			max-width: 500px;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		.headerCarouselImage {
+			max-width: 500px;
+		}
+	}
+}

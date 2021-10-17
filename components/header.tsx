@@ -12,12 +12,13 @@ const Header = () => {
 	let pricesTag: string[] = ["USD", "EUR", "BDT", "INR"];
 	let [lan, setLang] = useState("EN");
 	let [price, setPrice] = useState("USD");
+
 	return (
 		<div className={style.mainDiv}>
 			<div className={style.insideMainDiv}>
 				<div className={style.headerLeftContent}>
 					<div className={style.logoStyle}>
-						<Image src={logo} alt="Logo" height={40} />
+						<Image src={logo} alt="Logo" height={28} />
 					</div>
 					<div className={style.iconsAndText}>
 						<MdOutlineCall size={20} />
