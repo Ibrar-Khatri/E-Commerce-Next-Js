@@ -12,6 +12,7 @@ const Header = () => {
 	let pricesTag: string[] = ["USD", "EUR", "BDT", "INR"];
 	let [lan, setLang] = useState("EN");
 	let [price, setPrice] = useState("USD");
+	let [isSelected, setIsSelected] = useState(false);
 
 	return (
 		<div className={style.mainDiv}>
@@ -39,11 +40,15 @@ const Header = () => {
 							list={languages}
 							selected={lan}
 							setSelected={setLang}
+							isSelected={isSelected}
+							setIsSelected={setIsSelected}
 						/>
 						<HeaderDropdownComponent
 							list={pricesTag}
 							selected={price}
 							setSelected={setPrice}
+							isSelected={isSelected}
+							setIsSelected={setIsSelected}
 						/>
 					</div>
 				</div>

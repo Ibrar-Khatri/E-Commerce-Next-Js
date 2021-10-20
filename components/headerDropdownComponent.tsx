@@ -6,21 +6,27 @@ type Props = {
 	list: string[];
 	selected: string;
 	setSelected: React.Dispatch<React.SetStateAction<any>>;
+	isSelected: boolean;
+	setIsSelected: React.Dispatch<React.SetStateAction<any>>;
 };
 
 const HeaderDropdownComponent: FunctionComponent<Props> = ({
 	list,
 	selected,
+	isSelected,
+	setIsSelected,
 }) => {
-	let [isSelect, setIsSelect] = useState(false);
-
 	return (
 		<div className={style.dropDownItem}>
-			<span onClick={() => setIsSelect(true)}>
+			<span
+				onClick={() =>
+					isSelected ? setIsSelected(false) : setIsSelected(true)
+				}
+			>
 				{selected} <AiOutlineDown />
 			</span>
 			<div className={style.listItem}>
-				{isSelect &&
+				{isSelected &&
 					list.map((item) => <p onClick={() => console.log(item)}>{item}</p>)}
 			</div>
 		</div>

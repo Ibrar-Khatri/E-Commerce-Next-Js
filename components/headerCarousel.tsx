@@ -10,21 +10,19 @@ const HeaderCarousel: FunctionComponent = () => {
 			<Caontainer>
 				<div className={style.headerCarousel}>
 					<div className={style.headerCarouselText}>
-						<div className={style.mainHeading}>
-							<h1>50% Off For Your First Shopping</h1>
-						</div>
 						<div>
+							<h1>50% Off For Your First Shopping</h1>
+
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
 								lobortis consequat eu, quam etiam at quis ut convalliss.
 							</p>
-						</div>
-						<div>
+
 							<button>Shop Now</button>
 						</div>
 					</div>
 					<div className={style.headerCarouselImage}>
-						<Image src={NikeShoe} />
+						<Image src={NikeShoe} className={style.shoeImage} />
 					</div>
 				</div>
 			</Caontainer>
