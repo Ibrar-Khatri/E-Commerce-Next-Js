@@ -16,80 +16,58 @@ const HeaderCarousel: FunctionComponent = () => {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		className: style.headerCarousel,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 1024,
-		// 		settings: {
-		// 			slidesToShow: 1,
-		// 			slidesToScroll: 1,
-		// 			infinite: true,
-		// 			dots: true,
-		// 		},
-		// 	},
-		// 	{
-		// 		breakpoint: 600,
-		// 		settings: {
-		// 			slidesToShow: 1,
-		// 			slidesToScroll: 1,
-		// 			initialSlide: 1,
-		// 		},
-		// 	},
-		// 	{
-		// 		breakpoint: 480,
-		// 		settings: {
-		// 			slidesToShow: 1,
-		// 			slidesToScroll: 1,
-		// 		},
-		// 	},
-		// ],
 	};
 	return (
 		<div className={style.headerCarouselMainDiv}>
 			<Caontainer>
-				<Slider {...settings}>
-					{/* <div>
+				<div>
+					<Slider {...settings}>
+						{/* <div>
 						<p>1</p>
 					</div>
 					<div>2</div> */}
-					<div>
-						<div className={style.headerCarouselText}>
-							<div>
-								<h1>50% Off For Your First Shopping</h1>
+						<div>
+							<div className={style.headerCarouselText}>
+								<div>
+									<h1>50% Off For Your First Shopping</h1>
 
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-									lobortis consequat eu, quam etiam at quis ut convalliss.
-								</p>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Quis lobortis consequat eu, quam etiam at quis ut
+										convalliss.
+									</p>
 
-								<button>Shop Now</button>
+									<button>Shop Now</button>
+								</div>
+							</div>
+							<div className={style.headerCarouselImage}>
+								<div>
+									<Image src={NikeShoe} className={style.shoeImage} />
+								</div>
 							</div>
 						</div>
-						<div className={style.headerCarouselImage}>
-							<div>
-								<Image src={NikeShoe} className={style.shoeImage} />
-							</div>
-						</div>
-					</div>
-					<div>
-						<div className={style.headerCarouselText}>
-							<div>
-								<h1>50% Off For Your First Shopping</h1>
+						<div>
+							<div className={style.headerCarouselText}>
+								<div>
+									<h1>50% Off For Your First Shopping</h1>
 
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-									lobortis consequat eu, quam etiam at quis ut convalliss.
-								</p>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Quis lobortis consequat eu, quam etiam at quis ut
+										convalliss.
+									</p>
 
-								<button>Shop Now</button>
+									<button>Shop Now</button>
+								</div>
+							</div>
+							<div className={style.headerCarouselImage}>
+								<div>
+									<Image src={NikeShoe} className={style.shoeImage} />
+								</div>
 							</div>
 						</div>
-						<div className={style.headerCarouselImage}>
-							<div>
-								<Image src={NikeShoe} className={style.shoeImage} />
-							</div>
-						</div>
-					</div>
-				</Slider>
+					</Slider>
+				</div>
 			</Caontainer>
 		</div>
 	);
