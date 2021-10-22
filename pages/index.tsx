@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 		<>
 			<Header />
 			<NavBarHeader />
-			<HeaderCarousel />
+			{/* <HeaderCarousel /> */}
 			<FlashDeal />
 		</>
 	);

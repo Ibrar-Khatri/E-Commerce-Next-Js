@@ -1,34 +1,79 @@
+// .mainDivFlashDeal {
+// 	display: flex;
+// 	justify-content: center;
+// 	position: relative;
+// 	.flashDealCarousel {
+// 		height: 100px;
+// 		// max-width: 1000px;
+// 		background-color: yellowgreen;
+// 		display: flex !important;
+// 		justify-content: center !important;
+// 		div {
+// 			display: flex !important;
+// 			justify-content: center !important;
+// 			background-color: yellow;
+// 			max-width: 500px;
+// 			div {
+// 				// width: 100% !important;
+// 				margin: 10px !important;
+// 				// background-color: blue !important;
+// 				div {
+// 					background-color: orange;
+// 					div {
+// 						background-color: pink;
+// 						.productCardMainDiv > div {
+// 							background-color: red;
+// 							height: 200px !important;
+// 							width: 200px !important;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+
+
+
+
+
+
+
 .mainDivFlashDeal {
 	display: flex;
 	justify-content: center;
-	position: relative;
-	.flashDealCarousel {
-		height: 100px;
-		// max-width: 1000px;
-		background-color: yellowgreen;
-		display: flex !important;
-		justify-content: center !important;
-		div {
-			display: flex !important;
-			justify-content: center !important;
-			background-color: yellow;
-			max-width: 500px;
-			div {
-				// width: 100% !important;
-				margin: 10px !important;
-				// background-color: blue !important;
-				div {
-					background-color: orange;
-					div {
-						background-color: pink;
-						.productCardMainDiv > div {
-							background-color: red;
-							height: 200px !important;
-							width: 200px !important;
-						}
-					}
+	div {
+		div{
+			div:nth-child(1) {
+				background-color: aqua;
+				display: flex;
+				justify-content: center;
+				div:nth-child(2) {
+					max-width: 700px;
 				}
+				div:nth-child(1),div:nth-child(3) {
+					background-color: red;
+					margin : auto 20px auto 20px
+							}
 			}
 		}
 	}
+	
+	.flashDealCarousel>div {	
+		// display: flex;
+		// justify-content: center;
+		height: 100px;
+		max-width: 700px;
+		// width: 100%;
+		background-color: yellowgreen;
+	}
 }
+
+
+
+
+
+
+
+

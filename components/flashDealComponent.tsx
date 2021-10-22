@@ -9,13 +9,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 const FlashDeal: FunctionComponent = () => {
 	var settings = {
-		dots: false,
+		dots: true,
 		infinite: true,
 		arrows: true,
-		speed: 500,
+		speed: 300,
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		className: style.flashDealCarousel,
+		nextArrow:<div></div>,
+		prevArrow:<div></div>,
 	};
 
 	let products: object[] = [
@@ -91,7 +93,26 @@ const FlashDeal: FunctionComponent = () => {
 		},
 	];
 
-	return <div className={style.mainDivFlashDeal}></div>;
+	return <div className={style.mainDivFlashDeal}>
+		<Caontainer >
+			<div>
+
+			<Slider {...settings} >
+				{
+					products.map((item,i) => {
+						return <div className='productCardMainDiv'>
+							<div>
+								{i}
+							{/* <div></div>
+							<div></div> */}
+							</div>
+						</div>
+					})
+				}
+			</Slider>
+			</div>
+		</Caontainer>
+	</div>;
 };
 
 export default FlashDeal;
