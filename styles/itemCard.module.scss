@@ -1,9 +1,33 @@
 .productCardMainDiv {
-	background-color: wheat;
-	display: flex !important;
-	justify-content: center !important;
+	background-color: wheat !important;
+	margin: 20px;
 	div {
-		width: 100px;
-		background-color: blueviolet !important;
+		overflow: hidden;
+		.productImage {
+		}
+		.productDetail {
+			font-size: 14px;
+			padding-left: 15px;
+			padding-bottom: 12px;
+			.productDet {
+				div:nth-child(1) > a > h3 {
+					padding: 0%;
+					margin: 0%;
+					color: rgb(55, 63, 80);
+					font-weight: 400;
+				}
+				div:nth-child(3) {
+					span {
+						color: rgb(210, 63, 87);
+						padding-right: 12px;
+					}
+					del {
+						color: rgb(125, 135, 156);
+					}
+				}
+			}
+			.addToCardBut {
+			}
+		}
 	}
 }

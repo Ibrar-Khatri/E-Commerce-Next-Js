@@ -12,8 +12,10 @@ const Home: NextPage = () => {
 		<>
 			<Header />
 			<NavBarHeader />
-			{/* <HeaderCarousel /> */}
-			<FlashDeal />
+			<HeaderCarousel />
+			<div className={styles.bgColor}>
+				<FlashDeal />
+			</div>
 		</>
 	);
 };
