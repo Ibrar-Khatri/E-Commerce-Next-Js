@@ -1,15 +1,25 @@
 .productCardMainDiv {
-	background-color: wheat !important;
 	margin: 20px;
+	box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+	border-radius: 8px;
+	background-color: rgb(255, 255, 255);
+	padding:2px ;
 	div {
-		overflow: hidden;
 		.productImage {
+
 		}
 		.productDetail {
 			font-size: 14px;
 			padding-left: 15px;
+			padding-right: 15px;
 			padding-bottom: 12px;
+			display: flex;
+			justify-content: space-between;
 			.productDet {
+				div{
+					margin-top:5px ;
+					margin-bottom:5px ;
+				}
 				div:nth-child(1) > a > h3 {
 					padding: 0%;
 					margin: 0%;
@@ -27,6 +37,33 @@
 				}
 			}
 			.addToCardBut {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				div:nth-child(1),div:nth-child(3){
+					border: 1px solid #D23F57;
+					color: #D23F57;
+					border-radius: 4px;
+					height: 25px;
+					width: 25px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				div:nth-child(1):hover,div:nth-child(3):hover {
+					border: 1px solid rgba(210, 63, 87, 0.5);
+					// color: rgba(210, 63, 87, 0.5);
+				}
+				div:nth-child(1):active,div:nth-child(3):active {
+				background-color: rgba(210, 63, 87, 0.5);
+				}
+				div:nth-child(2){
+					margin-top: 5px;
+					margin-bottom: 5px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
 			}
 		}
 	}

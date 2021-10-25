@@ -8,15 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ItemCard from "./itemCard";
 import { flashDealItems } from "../helper/flashDeal.helper";
-
-const NextPrev: FunctionComponent = ({ cond, onClick, className }) => {
-	console.log(cond);
-	return (
-		<div className={className} onClick={onClick}>
-			{cond}
-		</div>
-	);
-};
+import CarouselArrows from "./carouselArrows";
 
 const FlashDeal: FunctionComponent = () => {
 	var settings = {
@@ -27,8 +19,8 @@ const FlashDeal: FunctionComponent = () => {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		className: style.flashDealCarousel,
-		nextArrow: <NextPrev cond="p" />,
-		prevArrow: <NextPrev cond="q" />,
+		nextArrow: <CarouselArrows type='next' />,
+		prevArrow: <CarouselArrows type='prev' />,
 
 		responsive: [
 			{

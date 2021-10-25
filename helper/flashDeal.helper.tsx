@@ -6,7 +6,7 @@ import flash4 from "../assets/flash-4.png";
 export const flashDealItems: object[] = [
 	{
 		name: "Smart watch black",
-		rating: 3,
+		rating: 2,
 		price: "250.00",
 		discountPerc: 25,
 		salePrice: `$${187.5}`,
@@ -22,7 +22,7 @@ export const flashDealItems: object[] = [
 	},
 	{
 		name: "Smart watch black",
-		rating: 3,
+		rating: 5,
 		price: "250.00",
 		discountPerc: 25,
 		salePrice: `$${187.5}`,
@@ -30,7 +30,7 @@ export const flashDealItems: object[] = [
 	},
 	{
 		name: "Smart watch black",
-		rating: 3,
+		rating: 4,
 		price: "250.00",
 		discountPerc: 25,
 		salePrice: `$${187.5}`,
