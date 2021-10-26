@@ -1,0 +1,96 @@
+.headerMainDiv {
+	background-color: rgb(15, 52, 96);
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-size: 12px;
+	.insideMainDiv {
+		max-width: 1200px;
+		width: 97%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.headerLeftContent {
+			display: flex;
+			justify-content: flex-start;
+			width: 40%;
+		}
+		.headerRightContent {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.iconsAndText {
+			display: flex;
+			align-items: center;
+			padding-left: 12px;
+		}
+		.textStyle {
+			margin-right: 20px;
+			width: 170px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-weight: 200;
+		}
+		.textStyle > a:hover {
+			color: rgb(210, 63, 87);
+		}
+		.dropDownStyle {
+			margin-right: 20px;
+			width: 70px;
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+		}
+		.logoStyle {
+			display: none;
+		}
+		.iconsAndText > span {
+			padding-left: 5px;
+			font-weight: 200;
+		}
+		// .dropDownItem {
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	align-items: center;
+		// }
+		// .dropDownItem div {
+		// 	background-color: rgb(255, 255, 255);
+		// 	color: rgb(43, 52, 69);
+		// 	border-radius: 4px;
+		// 	// box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
+		// 	// 	rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+		// 	box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
+		// 		rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+		// 	position: absolute;
+		// 	width: 50px;
+		// }
+		// .listItem {
+		// 	margin-top: 27px;
+		// 	display: absolute;
+		// }
+		// .listItem > p {
+		// 	display: flex;
+		// 	justify-content: center;
+		// 	margin: 0 auto;
+		// 	height: 35px;
+		// 	align-items: center;
+		// }
+		// .listItem > p:hover {
+		// 	background-color: rgba(0, 0, 0, 0.04);
+		// }
+
+		@media screen and (max-width: 900px) {
+			.logoStyle {
+				display: block;
+			}
+			.textStyle {
+				display: none;
+			}
+			.iconsAndText {
+				display: none;
+			}
+		}
+	}
+}

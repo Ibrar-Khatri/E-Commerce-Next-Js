@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { IoMdStarOutline } from "react-icons/io";
 import { IoMdStar } from "react-icons/io";
-import style from "../styles/starRatingComponent.module.scss";
 
 type Props = {
 	rating: number;
@@ -29,7 +28,7 @@ const StarRating: FunctionComponent<Props> = ({
 				return (
 					<span key={index} onClick={() => handleChange(index)}>
 						{
-							rating > index ? <IoMdStar className={style.activeStar} /> : <IoMdStarOutline className={style.inactiveStar} />
+							rating > index ? <IoMdStar className='activeStar' /> : <IoMdStarOutline className='inactiveStar' />
 						}
 					</span>
 				);

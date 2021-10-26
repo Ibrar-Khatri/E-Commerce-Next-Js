@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from "react";
 import Image from "next/image";
 import Caontainer from "./container";
-import style from "../styles/flashDealComponent.module.scss";
 import { IoIosFlash } from "react-icons/io";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -9,6 +8,9 @@ import "slick-carousel/slick/slick-theme.css";
 import ItemCard from "./itemCard";
 import { flashDealItems } from "../helper/flashDeal.helper";
 import CarouselArrows from "./carouselArrows";
+import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
+import { AiFillCaretRight } from "react-icons/ai";
+
 
 const FlashDeal: FunctionComponent = () => {
 	var settings = {
@@ -18,9 +20,9 @@ const FlashDeal: FunctionComponent = () => {
 		speed: 300,
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		className: style.flashDealCarousel,
-		nextArrow: <CarouselArrows type='next' />,
-		prevArrow: <CarouselArrows type='prev' />,
+		className: "flashDealCarousel",
+		nextArrow: <BsFillArrowRightCircleFill />,
+		prevArrow: <BsFillArrowLeftCircleFill />,
 
 		responsive: [
 			{
@@ -30,7 +32,7 @@ const FlashDeal: FunctionComponent = () => {
 					slidesToScroll: 1,
 					infinite: true,
 					dots: false,
-					className: style.flashDealCarousel,
+					className: "flashDealCarousel"
 				},
 			},
 			{
@@ -49,7 +51,7 @@ const FlashDeal: FunctionComponent = () => {
 					slidesToScroll: 1,
 					infinite: true,
 					dots: false,
-					className: style.flashDealCarousel,
+					className: "flashDealCarousel"
 				},
 			},
 			{
@@ -59,21 +61,29 @@ const FlashDeal: FunctionComponent = () => {
 					slidesToScroll: 1,
 					infinite: true,
 					dots: false,
-					className: style.flashDealCarousel,
+					className: "flashDealCarousel"
 				},
 			},
 		],
 	};
 
 	return (
-		<div className={style.mainDivFlashDeal}>
+		<div className="mainDivFlashDeal">
 			<Caontainer>
 				<div>
-					<div className={style.flashDealTitle}>
-						<IoIosFlash color="red" className={style.flashDealIcon} size={30} />
-						<h2>Flash Deals</h2>
+					<div className="flashDealTitle">
+						<div>
+							<IoIosFlash color="red" className="flashDealIcon" size={30} />
+							<h2>Flash Deals</h2>
+						</div>
+
+						<div className='flashDealViewAll' >
+							<a href="#">
+								View all<AiFillCaretRight size={15} />
+							</a>
+						</div>
 					</div>
-					<div className={style.itemsView}>
+					<div className="itemsView">
 						<Slider {...settings}>
 							{flashDealItems.map((item, i) => {
 								return <ItemCard product={item} />;

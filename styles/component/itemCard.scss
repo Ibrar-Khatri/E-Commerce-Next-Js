@@ -3,10 +3,35 @@
 	box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
 	border-radius: 8px;
 	background-color: rgb(255, 255, 255);
-	padding:2px ;
+	padding: 2px;
 	div {
-		.productImage {
-
+		.productImage > div > div {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 10px;
+			margin-left: 10px;
+			margin-right: 20px;
+			.discountTag {
+				background-color: #d23f57;
+				color: #fff;
+				border-radius: 16px;
+				height: 25px;
+				width: 58px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 10px;
+				font-weight: 600;
+				position: relative;
+				z-index: 99;
+			}
+			.addToFav {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 55px;
+				display:none
+			}
 		}
 		.productDetail {
 			font-size: 14px;
@@ -16,9 +41,9 @@
 			display: flex;
 			justify-content: space-between;
 			.productDet {
-				div{
-					margin-top:5px ;
-					margin-bottom:5px ;
+				div {
+					margin-top: 5px;
+					margin-bottom: 5px;
 				}
 				div:nth-child(1) > a > h3 {
 					padding: 0%;
@@ -40,9 +65,10 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: flex-end;
-				div:nth-child(1),div:nth-child(3){
-					border: 1px solid #D23F57;
-					color: #D23F57;
+				div:nth-child(1),
+				div:nth-child(3) {
+					border: 1px solid #d23f57;
+					color: #d23f57;
 					border-radius: 4px;
 					height: 25px;
 					width: 25px;
@@ -50,14 +76,16 @@
 					justify-content: center;
 					align-items: center;
 				}
-				div:nth-child(1):hover,div:nth-child(3):hover {
+				div:nth-child(1):hover,
+				div:nth-child(3):hover {
 					border: 1px solid rgba(210, 63, 87, 0.5);
 					// color: rgba(210, 63, 87, 0.5);
 				}
-				div:nth-child(1):active,div:nth-child(3):active {
-				background-color: rgba(210, 63, 87, 0.5);
+				div:nth-child(1):active,
+				div:nth-child(3):active {
+					background-color: rgba(210, 63, 87, 0.5);
 				}
-				div:nth-child(2){
+				div:nth-child(2) {
 					margin-top: 5px;
 					margin-bottom: 5px;
 					display: flex;
@@ -65,6 +93,14 @@
 					align-items: center;
 				}
 			}
+		}
+	}
+}
+.productCardMainDiv:hover{
+	div{
+		.addToFav{
+			display: inline !important;
+			background-color: yellowgreen;
 		}
 	}
 }

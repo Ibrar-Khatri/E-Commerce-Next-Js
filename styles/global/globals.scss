@@ -1,0 +1,28 @@
+@import '../pages/index.scss';
+@import '../component/carouselArrows.scss';
+@import '../component/container.scss';
+@import '../component/flashDealComponent.scss';
+@import '../component/header.scss';
+@import '../component/headerCarousel.scss';
+@import '../component/headerDropdownComponent.scss';
+@import '../component/itemCard.scss';
+@import '../component/navHeader.scss';
+@import '../component/starRatingComponent.scss';
+
+
+html,
+body {
+	padding: 0%;
+	margin: 0%;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}

@@ -1,10 +1,18 @@
 import React, { FunctionComponent } from "react";
+import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
 
-const CarouselArrows: FunctionComponent = (props) => {
-    const { className, style, onClick } = props; 
+type Prop = {
+    type: string
+    onClick: Function
+    className: string
+}
+
+const CarouselArrows: FunctionComponent<Prop> = ({ type, onClick, className }) => {
     return (
-        <div className={className} style>
-
+        <div className="arrowsMAinDiv">
+            <div onClick={onClick} className={className}>
+                <div className="arrowDiv">{type === 'prev' ? <BsFillArrowLeftCircleFill /> : <BsFillArrowRightCircleFill />}</div>
+            </div>
         </div>
     );
 };

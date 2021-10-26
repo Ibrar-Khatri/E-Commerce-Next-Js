@@ -1,5 +1,4 @@
 import React, { useState, FunctionComponent } from "react";
-import style from "../styles/headerDropdownComponent.module.scss";
 import { AiOutlineDown } from "react-icons/ai";
 
 type Props = {
@@ -17,7 +16,7 @@ const HeaderDropdownComponent: FunctionComponent<Props> = ({
 	setIsSelected,
 }) => {
 	return (
-		<div className={style.dropDownItem}>
+		<div className='headerDropdown'>
 			<span
 				onClick={() =>
 					isSelected ? setIsSelected(false) : setIsSelected(true)
@@ -25,7 +24,7 @@ const HeaderDropdownComponent: FunctionComponent<Props> = ({
 			>
 				{selected} <AiOutlineDown />
 			</span>
-			<div className={style.listItem}>
+			<div className='listItem'>
 				{isSelected &&
 					list.map((item) => <p onClick={() => console.log(item)}>{item}</p>)}
 			</div>

@@ -5,7 +5,6 @@ import FlashDeal from "../components/flashDealComponent";
 import Header from "../components/header";
 import HeaderCarousel from "../components/headerCarousel";
 import NavBarHeader from "../components/navHeader";
-import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
 	return (
@@ -13,7 +12,7 @@ const Home: NextPage = () => {
 			<Header />
 			<NavBarHeader />
 			<HeaderCarousel />
-			<div className={styles.bgColor}>
+			<div className='indexPageBgColor'>
 				<FlashDeal />
 			</div>
 		</>
