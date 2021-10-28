@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import FlashDeal from "../components/flashDealComponent";
+import FlashDeal from "../components/flashDeal";
 import Header from "../components/header";
 import HeaderCarousel from "../components/headerCarousel";
 import NavBarHeader from "../components/navHeader";
+import TopCategory from "../components/topCategories";
 
 const Home: NextPage = () => {
 	return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
 			<HeaderCarousel />
 			<div className='indexPageBgColor'>
 				<FlashDeal />
+				<TopCategory />
 			</div>
 		</>
 	);

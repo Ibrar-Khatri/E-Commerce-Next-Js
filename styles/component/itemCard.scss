@@ -1,36 +1,59 @@
-.productCardMainDiv {
+.itemCardMainDiv {
 	margin: 20px;
 	box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
 	border-radius: 8px;
 	background-color: rgb(255, 255, 255);
 	padding: 2px;
 	div {
-		.productImage > div > div {
+		.productImage {
 			display: flex;
-			justify-content: space-between;
+			flex-direction: column;
 			margin-top: 10px;
 			margin-left: 10px;
 			margin-right: 20px;
-			.discountTag {
-				background-color: #d23f57;
-				color: #fff;
-				border-radius: 16px;
-				height: 25px;
-				width: 58px;
+			div:nth-child(1) {
 				display: flex;
-				justify-content: center;
-				align-items: center;
-				font-size: 10px;
-				font-weight: 600;
-				position: relative;
-				z-index: 99;
-			}
-			.addToFav {
-				display: flex;
-				flex-direction: column;
 				justify-content: space-between;
-				height: 55px;
-				display:none
+				.discountTag {
+					background-color: #d23f57;
+					color: #fff;
+					border-radius: 16px;
+					height: 25px;
+					width: 58px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 10px;
+					font-weight: 600;
+					position: relative;
+					z-index: 99;
+				}
+				.addToFav {
+					z-index: 99;
+					height: 25px;
+					div {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						color: #2b3445;
+						div {
+							border-radius: 100px;
+							height: 25px;
+							width: 25px;
+							display: none;
+							justify-content: center !important;
+							align-items: center;
+						}
+						.eyeIcon:hover,
+						.heartIcon:hover {
+							background-color: rgba(0, 0, 0, 0.04);
+							border-radius: 100px;
+							box-shadow: 0px 1px 3px rgb(3 0 71 / 9%);
+							height: 25px;
+							width: 25px;
+						}
+					}
+				}
 			}
 		}
 		.productDetail {
@@ -79,7 +102,6 @@
 				div:nth-child(1):hover,
 				div:nth-child(3):hover {
 					border: 1px solid rgba(210, 63, 87, 0.5);
-					// color: rgba(210, 63, 87, 0.5);
 				}
 				div:nth-child(1):active,
 				div:nth-child(3):active {
@@ -95,12 +117,9 @@
 			}
 		}
 	}
-}
-.productCardMainDiv:hover{
-	div{
-		.addToFav{
-			display: inline !important;
-			background-color: yellowgreen;
+	div:hover {
+		.addToFav > div > div {
+			display: flex !important;
 		}
 	}
 }

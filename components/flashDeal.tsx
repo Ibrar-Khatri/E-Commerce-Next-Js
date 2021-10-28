@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ItemCard from "./itemCard";
 import { flashDealItems } from "../helper/flashDeal.helper";
-import CarouselArrows from "./carouselArrows";
+import CardHeader from "./cardHeader";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
 import { AiFillCaretRight } from "react-icons/ai";
 
@@ -71,19 +71,8 @@ const FlashDeal: FunctionComponent = () => {
 		<div className="mainDivFlashDeal">
 			<Caontainer>
 				<div>
-					<div className="flashDealTitle">
-						<div>
-							<IoIosFlash color="red" className="flashDealIcon" size={30} />
-							<h2>Flash Deals</h2>
-						</div>
-
-						<div className='flashDealViewAll' >
-							<a href="#">
-								View all<AiFillCaretRight size={15} />
-							</a>
-						</div>
-					</div>
-					<div className="itemsView">
+					<CardHeader title='Flash Deal' color='#d23f57' Icon={IoIosFlash} size={25} />
+					<div >
 						<Slider {...settings}>
 							{flashDealItems.map((item, i) => {
 								return <ItemCard product={item} />;

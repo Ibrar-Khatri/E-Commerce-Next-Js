@@ -1,29 +1,46 @@
 import React, { FunctionComponent, useState } from "react";
 import Image from "next/image";
 import StarRating from "./starRatingComponent";
-import { AiOutlineMinus, AiOutlinePlus, AiFillEye, AiOutlineHeart } from 'react-icons/ai'
+import { AiOutlineMinus, AiOutlinePlus, AiFillEye, AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
 
 type Props = {
-	product: object;
+	product: {
+		discountPerc: string
+		productImage: string
+		rating: number
+		price: number
+		salePrice: number
+		name: string
+	};
 };
 
 const ItemCard: FunctionComponent<Props> = ({ product }) => {
+
 	let [quantity, setQuantity] = useState(0)
+	let [isFavourite, setIsFavourite] = useState(false)
 
 	return (
-		<div className='productCardMainDiv'>
+		<div className='itemCardMainDiv'>
 			<div>
 				<div className='productImage'>
 					<div>
-						<div >
-							<div className='discountTag'>{`${product.discountPerc}% off`}</div>
-							<div className='addToFav'>
-								<AiFillEye size={25} />
-								<AiOutlineHeart size={25} />
+						<div className='discountTag'>{`${product.discountPerc}% off`}</div>
+						<div className='addToFav'>
+							<div>
+								<div className='eyeIcon'>
+									<AiFillEye size={20} />
+								</div>
+								<div className='heartIcon' onClick={() => isFavourite ? setIsFavourite(false) : setIsFavourite(true)}>
+									{
+										isFavourite ? <AiFillHeart size={20} color='#d23f57' /> : <AiOutlineHeart size={20} color='rgba(0, 0, 0, 0.54)' />
+									}
+								</div>
 							</div>
 						</div>
 					</div>
-					<Image src={product.productImage} />
+					<div>
+						<Image src={product.productImage} />
+					</div>
 				</div>
 				<div className='productDetail'>
 					<div className='productDet'>
