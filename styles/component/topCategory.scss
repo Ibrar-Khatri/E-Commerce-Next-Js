@@ -5,13 +5,15 @@
 	div {
 		div {
 			.topCategoryCarousel {
-				// max-width: 1160px;
 				.slick-next,
 				.slick-prev {
-					color: #0f3460;
-					z-index: 99999;
 					height: 35px;
 					width: 35px;
+					padding: 6px;
+					background-color: #0f3460;
+					color:#fff;
+					border-radius: 50%;
+					z-index: 99;
 				}
 				.slick-next {
 					margin-right: 25px;

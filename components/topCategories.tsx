@@ -9,10 +9,18 @@ import { flashDealItems } from "../helper/flashDeal.helper";
 import CardHeader from "./cardHeader";
 import ItemCard from "./itemCard";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
+import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import TopCategoryItemCard from "./topCategoryItemCard";
 
 
 const TopCategory: FunctionComponent = () => {
+
+    let color = '#0f3460'
+    let bgColor = '#DAE1E7'
+
+    let nextArrow = {}
+    let prevArrow = {}
+
 
     var settings = {
         dots: false,
@@ -22,9 +30,11 @@ const TopCategory: FunctionComponent = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         className: "topCategoryCarousel",
-        nextArrow: <BsFillArrowRightCircleFill />,
-        prevArrow: <BsFillArrowLeftCircleFill />,
-
+        // afterChange: ((i: number) => i + 3 === topCategories.length ? console.log(i + 3) : i === 0 && console.log(i)),
+        nextArrow:
+            <AiOutlineArrowRight size={15} />
+        ,
+        prevArrow: <AiOutlineArrowLeft size={15} />,
         responsive: [
             {
                 breakpoint: 950,

@@ -11,14 +11,16 @@ type Props = {
 };
 
 const TopCategoryItemCard: FunctionComponent<Props> = ({ category }) => {
-    
+
     return (
         <div className='topCategoryItemCardMainDiv'>
             <div>
-                <Image src={category.cateImage} />
-                <div className='categoryNameAndStatus' style={{ backgroundImage: `url(${category.cateImage})` }}>
+                <div className='categoryNameAndStatus' >
                     <div>{category.name}</div>
                     <div>{category.orderPerWeek}</div>
+                </div>
+                <div>
+                    <Image src={category.cateImage} className='categoryImage' />
                 </div>
             </div>
         </div>

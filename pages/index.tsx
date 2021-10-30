@@ -6,6 +6,7 @@ import Header from "../components/header";
 import HeaderCarousel from "../components/headerCarousel";
 import NavBarHeader from "../components/navHeader";
 import TopCategory from "../components/topCategories";
+import TopRating from "../components/topRating";
 
 const Home: NextPage = () => {
 	return (
@@ -16,6 +17,9 @@ const Home: NextPage = () => {
 			<div className='indexPageBgColor'>
 				<FlashDeal />
 				<TopCategory />
+				<div>
+					<TopRating />
+				</div>
 			</div>
 		</>
 	);
